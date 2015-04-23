@@ -1,12 +1,8 @@
 # Apache Storm UI for Ubuntu 14.04
-#
-# GitHub - http://github.com/dalekurt/docker-storm-ui
-# Docker Hub - http://hub.docker.com/u/dalekurt/storm-ui
-# Twitter - http://www.twitter.com/dalekurt
 
-FROM dalekurt/storm
+FROM aviata/storm-2
 
-MAINTAINER Dale-Kurt Murray "dalekurt.murray@gmail.com"
+MAINTAINER jmarsh.ext@aviatainc.com "jmarsh.ext@aviatainc.com"
 
 RUN /usr/bin/config-supervisord.sh ui
 
